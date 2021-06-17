@@ -67,6 +67,8 @@ def check_which_condition(var1,var2):
     elif var1== 16 :
         if var2>80:
             return  'FGFB 15Nm'
+    else:
+        return -1
 @app.route('/transform', methods=["POST"])
 def transform_view():
     f = request.files['data_file']
