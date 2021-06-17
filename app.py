@@ -20,53 +20,53 @@ def form():
 
 def check_which_condition(var1,var2):
     if var1== 1:
-        if var2>80:
-            return 'GG 0Nm'
+        if var2>=80:
+            return 'Good Gear and Good Bearing at 0 Nm'
     elif var1== 2 :
-        if var2>80:
-            return 'GG 5Nm'
+        if var2>=80:
+            return 'Good Gear and Good Bearing at 5 Nm'
     elif var1== 3 :
-        if var2>80:
-            return 'GG 10Nm'
+        if var2>=80:
+            return 'Good Gear and Good Bearing at 10 Nm'
     elif var1== 4 :
-        if var2>80:
-            return 'GG 15Nm'
+        if var2>=80:
+            return 'Good Gear and Good Bearing at 15Nm'
     elif var1== 5 :
-        if var2>80:
-            return 'FB 0Nm'
+        if var2>=80:
+            return 'Good Gear and Faulty Bearing at 0 Nm'
     elif var1== 6 :
-        if var2>80:
-            return 'FB 5Nm'
+        if var2>=80:
+            return 'Good Gear and Faulty Bearing at 5 Nm'
     elif var1== 7 :
-        if var2>80:
-            return 'FB 10Nm'
+        if var2>=80:
+            return 'Good Gear and Faulty Bearing at 10 Nm'
     elif var1== 8 :
-        if var2>80:
-            return 'FB 15Nm'
+        if var2>=80:
+            return 'Good Gear and Faulty Bearing at 15 Nm'
     elif var1== 9 :
-        if var2>80:
-            return 'FG 0Nm'
+        if var2>=80:
+            return 'Faulty Gear and Good Bearing at 0 Nm'
     elif var1== 10 :
-        if var2>80:
-            return 'FG 5Nm'
+        if var2>=80:
+            return 'Faulty Gear and Good Bearing at 5 Nm'
     elif var1== 11 :
-        if var2>80:
-            return 'FG 10Nm'
+        if var2>=80:
+            return 'Faulty Gear and Good Bearing at 10 Nm'
     elif var1== 12 :
-        if var2>80:
-            return 'FG 15Nm'
+        if var2>=80:
+            return 'Faulty Gear and Good Bearing at 15 Nm'
     elif var1== 13 :
-        if var2>80:
-            return 'FGFB 0Nm'
+        if var2>=80:
+            return 'Faulty Gear and Faulty Bearing at 0 Nm'
     elif var1== 14 :
-        if var2>80:
-            return 'FGFB 5Nm'
+        if var2>=80:
+            return 'Faulty Gear and Faulty Bearing at 5 Nm'
     elif var1== 15 :
-        if var2>80:
-            return 'FGFB 10Nm'
+        if var2>=80:
+            return 'Faulty Gear and Faulty Bearing at 10 Nm'
     elif var1== 16 :
-        if var2>80:
-            return  'FGFB 15Nm'
+        if var2>=80:
+            return 'Faulty Gear and Faulty Bearing at 15 Nm'
 @app.route('/transform', methods=["POST"])
 def transform_view():
     f = request.files['data_file']
